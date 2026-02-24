@@ -1,0 +1,116 @@
+/* 
+   Author: Philemon Kira
+   File: style.css
+   Description: Styles the HTML layout using CSS Grid
+*/
+
+/* Universal selector resets default browser spacing */
+* {
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    box-sizing: border-box; /* Includes padding and border inside total width/height */
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif; /* Sets default font */
+    background-color: #f4f4f4; /* Sets light grey background */
+}
+
+/* Grid container configuration */
+.grid-container {
+    display: grid; /* Enables CSS Grid layout system */
+
+    grid-template-areas:
+        "header header"   /* Header spans across two columns */
+        "menu menu"       /* Menu spans across two columns */
+        "content main_content" /* content and then main_content */
+        "footer footer";  /* Footer spans across two columns */
+
+    grid-template-columns: 1fr 2fr; 
+    /* Defines column width ratio (content wider than sidebar) */
+
+    gap: 0px; /* Creates space between grid items */
+    padding: 5px; /* Adds spacing inside the container */
+}
+
+/* Header styling */
+.header {
+    grid-area: header; /* Assigns this section to the header grid area */
+    background-color: #0fad31; /* Sets dark blue background */
+    color: rgb(15, 3, 3); /* Sets text color to white */
+    padding: 20px; /* Adds internal spacing */
+    text-align: center; /* Centers text horizontally */
+}
+
+/* Navigation menu styling */
+.menu {
+    grid-area: menu; /* Assigns this section to the menu grid area */
+    background-color: #fffb0a; /* Sets background color */
+    padding: 10px;
+    
+   
+}
+
+/* Removes default bullet points and aligns menu items horizontally */
+.menu ul {
+    list-style: none; /* Removes list bullets */
+    display: flex; /* Displays items in a row */
+    justify-content: left; /* Centers items horizontally */
+}
+
+/* Adds spacing between menu items */
+.menu ul li {
+    margin: 0 10px;
+}
+
+/* Styles navigation links */
+.menu ul li a {
+    text-decoration: none; /* Removes underline from links */
+    color: rgb(2, 1, 1); /* Sets link text color */
+    font-weight: bold; /* Makes text bold */
+    padding: 8px 15px;              /* Creates box space */
+    border: 2px solid transparent;  /* Invisible border first */
+    transition: all 0.3s ease;      /* Smooth animation */
+}
+
+/* Changes link color when hovered */
+.menu ul li a:hover {
+    background-color: rgb(184, 178, 178);        /* Light background */
+}
+
+/* Main content styling */
+.main_content {
+    grid-area: main_content; /* Assigns this section to content grid area */
+    background-color: white; /* Sets white background */
+    padding: 10px; /* Adds internal spacing */
+}
+
+/* Heading spacing */
+ h2 {
+    margin-bottom: 15px;   /* Space below headings */
+}
+
+/* Paragraph spacing */
+.main_content p {
+    margin-bottom: 15px;   /* Space below paragraphs */
+    line-height: 1.6;      /* Better readability */
+}
+
+/* content styling */
+.content {
+    grid-area: content; /* Assigns this section to sidebar grid area */
+    background-color: white; /* Light grey background */
+    padding: 10px;
+    
+    
+}
+
+/* Footer styling */
+.footer {
+    grid-area: footer; /* Assigns this section to footer grid area */
+    background-color: #d3d5d8; /* Dark background color */
+    color: black; /* White text color */
+    text-align: center; /* Centers text */
+    padding: 15px; /* Adds spacing inside footer */
+}

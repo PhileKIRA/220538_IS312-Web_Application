@@ -1,0 +1,77 @@
+<!DOCTYPE html> <!-- Declares this document as HTML5 -->
+<html lang="en"> <!-- Root element of the webpage and sets language to English -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Defines character encoding for proper text display -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!-- Ensures proper scaling on different screen sizes -->
+
+    <title>Diwai Bank Ltd</title> 
+    <!-- Title displayed on the browser tab -->
+
+    <!-- 
+        Author: Philemon Kira
+        Course: IS312 Web Application Development
+        Assessment: AT2 - Lab 1
+        Date Created: 24 February 2026
+        Description: Website interface designed using CSS Grid Layout
+    -->
+
+    <link rel="stylesheet" href="style.css"> 
+    <!-- Links the external CSS file to apply styles -->
+</head>
+
+<body>
+
+    <div class="grid-container"> 
+    <!-- Main container that applies CSS Grid layout -->
+
+        <header class="header"> 
+        <!-- Header section of the website -->
+            <h1>Diwai Bank Ltd</h1> 
+            <!-- Main heading of the webpage -->
+        </header>
+
+        <nav class="menu"> 
+        <!-- Navigation menu section -->
+            <ul> 
+            <!-- Unordered list to structure navigation links -->
+                <li><a href="#">About DBL</a></li> 
+                <li><a href="#">Personal Banking</a></li>
+                <li><a href="#">Business Banking</a></li>
+                <li><a href="#">International Banking</a>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <section class="main_content"> 
+        <!-- Main content area of the webpage -->
+            <h2>Dashboard</h2>
+            <p>
+               If customer clicks on Accounts, this page should disply the accounts information.
+            </p>
+            <p>
+                If the customer clicks on tranfer between accounts, this page should display form for such tranfer.
+            </p>
+            <p>
+                If the customer clicks on Third-party tranfers, this should display form for such tranfer
+            </p>
+        </section>
+
+        <aside class="content"> 
+        <!-- Sidebar section for additional information -->
+            <h2>Tranfer money</h2>
+            <p><a href="#">Accounts</a></p> 
+            <p><a href="#">Transfer between accounts</a></p>
+            <p><a href="#">Third-party tranfer</a></p>
+        </aside>
+
+        <footer class="footer"> 
+        <!-- Footer section displayed at the bottom of the page -->
+            <p>&copy; copyright 2024 Diwai Bank Ltd</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
