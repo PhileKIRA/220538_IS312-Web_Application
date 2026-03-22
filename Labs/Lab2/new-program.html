@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+Author: Philemon Kira IS3
+Date: 22nd March 2026
+Unit: IS312 Web Application Development
+-->
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Lab2</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale.0">
+    </head>
+    <body>
+        <div class="container">
+        <div class="title">PROGRAM DETAILS</div>
+        <form action="add-new-program.php" method="post">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Program Name</span>
+                    <input type="text" name="name" placeholder="Enter Program" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Program code</span>
+                    <input type="text" name="code" placeholder="Enter program code" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Duration</span>
+                    <input type="text" name="duration" placeholder="eg. 4 years" required>
+                </div>
+            </div>
+            <div class="button">
+                <input type="submit" value="Add">
+            </div>
+        </form>
+    </div>
+    </body>
+    
+</html>
+
+

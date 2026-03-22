@@ -1,0 +1,245 @@
+/* Author: Philemon KIRA IS3 2026
+   Date: 22nd March 2026
+   Unit: IS312 Web Application Development */
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+/* BODY */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+    background: linear-gradient(green, yellow);
+}
+
+/* FORM PAGE */
+.form-page {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+/* FORM CONTAINER */
+.container {
+    max-width: 700px;
+    width: 100%;
+    background: white;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+
+.container .title {
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.container .title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 3px;
+    width: 30px;
+    background: linear-gradient(green, yellow);
+}
+
+.container form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form .user-details .input-box {
+    margin: 20px 0 12px 0;
+    width: calc(50% - 20px);
+}
+
+.user-details .input-box .details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 14px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+    border-color: green;
+}
+
+form .button {
+    height: 45px;
+    margin: 25px 0 0 0;
+}
+
+form .button input {
+    height: 100%;
+    width: 100%;
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: linear-gradient(green, yellow);
+}
+
+form .button input:hover {
+    opacity: 0.9;
+}
+
+/* INDEX PAGE */
+.index-container {
+    max-width: 800px;
+    margin: 60px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color:black;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #444;
+    line-height: 1.6;
+}
+
+.nav-links {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    text-decoration: none;
+    background: linear-gradient(green, yellow);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    opacity: 0.9;
+}
+
+/* STUDENT LISTING PAGE */
+.table-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background: linear-gradient(green, yellow);
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+tr:hover {
+    background: #eaf3ff;
+}
+
+/* GENERAL LINKS */
+a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    background: linear-gradient(green, yellow);
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+}
+
+
+/* MESSAGE BOX */
+.message {
+    margin-top: 20px;
+    padding: 12px;
+    background: #fff3cd;
+    color: #856404;
+    border-radius: 6px;
+}
+
+/* RESPONSIVE*/
+@media (max-width: 584px) {
+    .container {
+        max-width: 100%;
+    }
+
+    form .user-details .input-box {
+        width: 100%;
+    }
+
+    .index-container,
+    .table-container {
+        padding: 20px;
+    }
+
+    h1,
+    h2 {
+        font-size: 22px;
+    }
+
+    th,
+    td {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+
